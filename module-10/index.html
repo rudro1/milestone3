@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+*{
+   
+    text-decoration: none;
+}
+.white{
+   
+    color: rgb(234, 201, 201);
+
+}
+.head{
+    width: 80%;
+  
+justify-self: center;
+}
+nav{
+
+
+    display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li{
+    list-style: none;
+text-transform: uppercase;
+}
+
+
+
+.section_2{
+
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 50px; 
+}
+.section_2 h1{
+
+    margin-top: 30px;
+}
+.section_2 p{
+    margin-top: 30px;
+}
+
+.section_2 button{
+    margin-top: 30px;
+}
+.section_2 h1{
+    font-size: 40px;
+margin: 0;
+margin-bottom: 30px;
+}
+
+.section_2 p{
+    font-size: 20px;
+    margin: 0;
+ 
+}
+.circle{
+    background-image: url(influencer-gear-main/images/Circle\ design.svg);
+    margin: 10px;
+}
+
+.btn_primary{
+
+    color: white;
+    background-color:crimson;
+    border: 0;
+    padding: 10px;
+    border-radius: 0%  30%;
+    font-weight: bold;
+}
+ hr{
+    width: 96%;
+    color: red;
+    height: 2px;
+    background-color: rgba(255, 0, 0, 0.545);
+border: 0;
+border-radius: 0% 30%;
+}
+
+.section_3{
+    display: grid;
+    margin:0;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+section{
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.section_4 h3 {
+    text-align: center;
+    font-size: 33px;
+    margin: 48px 0px;
+}
+
+
+.section_4 .section_4_data{ 
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.section_4_data .card{list-style: none;
+    border:0;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+h4.card-title {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.card-body 
+    p {
+    font-size: 24px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.card-body ul {
+    list-style: none;
+  
+   padding: 0;
+
+}
+.card-body li{
+    list-style: none;
+}
+.card-body .fa-star:last-child{
+
+    color: red!important;
+   
+}
+
+.section_4 .see {
+   
+ margin-top:30px;
+ margin-bottom: 30px;
+    display: block;
+    text-align: right;
+    color: crimson;
+   text-decoration: none;
+   font-size: 20px;
+ 
+
+   }
+   .see .fa-arrow-right{
+    margin: 10px;
+    padding: 0;
+    margin-left:1px;
+    color: crimson;
+  position: relative;
+  bottom: -3px;
+   
+   }
+   .section_5 a{
+    color: white;
+   }
+.section_5 {
+    display: grid;
+    gap: 100px;
+    grid-template-columns: auto auto;
+}
+
+.section_6 {
+    text-align: center;
+    background: #03034c;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section_6 .div1 h3{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+a:hover{
+    color:gray;
+   
+}
+.see:hover{
+    background-color: antiquewhite;
+}
+ul li:hover{
+
+    background-color: antiquewhite;
+}
+button:hover{
+    background-color: white;
+  
+    border: 1px solid crimson;
+    color:crimson;
+}
+.card:hover{
+    background-color: aliceblue;
+}
+img:hover{
+    background-color: crimson;
+  
+}
+i:hover{
+    background-color: crimson;
+    color: white;
+}
+nav h3:hover{
+    background-color: crimson;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+    nav{
+    text-align: center;
+ flex-direction: column;
+ gap: 20px;
+ 
+  }
+
+  nav h3{
+    font-size: 35px;
+  }
+    nav ul{
+ flex-direction: column;
+   
+  }
+  nav ul li{
+    padding: 10px;
+    background-color: aliceblue;
+  }
+  .section_2{
+    
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+
+  .s2left button{
+  display: flex;
+  
+  justify-self: center;
+
+  }
+  .section_3{
+       
+    grid-template-columns: auto auto auto;
+align-items: center;
+gap: 20px;
+  }
+  .section_4 
+.section_4_data{
+ grid-template-columns: auto;
+
+gap: 20px;
+  }
+
+.section_5{
+    grid-template-columns: auto;
+    gap: 10px;
+
+}
+.section_5 button{
+    margin-top: 20px;
+    display: flex;
+ 
+    justify-self:center;
+}
+
+.circle{
+    width: 100%;
+}
+.section_6{
+    width: 100%;
+
+
+}
+
+
+
+.s2right img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.section_6 .div1{
+    margin-bottom: 10px;
+   
+}
+
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="head">
+<nav>
+<h3>Influencer products</h3>
+<ul class="nav">
+
+<li>home</li>
+<li>products</li>
+<li>sing up</li>
+<li>log in</li>
+<li><i class="fa-solid fa-magnifying-glass"></i></li>
+<li><i class="fa-solid fa-cart-shopping white"></i></li>
+
+</ul>
+</nav>
+
+<div class="section_2">
+
+<div class="s2left">
+<h1>Start your Journey as  <br>Influencer</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem 
+    vestibulum sed scelerisque eros. Lectus faucibus.</p>
+
+<button class="btn_primary">Preebook now <i class="fa-solid fa-arrow-right white"></i></button>
+</div>
+<div class="s2right">
+
+    <div class="circle "><img  src="image/main-camera.png" alt=""></div>
+
+
+</div>
+
+</div>
+
+<hr>
+
+<section class="section_3">
+
+<img src="/influencer-gear-main/logos/Alibaba.svg" alt="">
+<img src="/influencer-gear-main/logos/Amazon.svg" alt="">
+
+<img src="/influencer-gear-main/logos/Daraz.pk Logo.svg" alt="">
+<img src="/influencer-gear-main/logos/Ebay.svg" alt="">
+<img src="/influencer-gear-main/logos/Rakuten.svg" alt="">
+<img src="/influencer-gear-main/logos/Walmart.svg" alt="">
+<img src="/influencer-gear-main/logos/Target.svg" alt="">
+</section>
+<hr>
+
+
+<section class="section_4">
+<h3>Popular Collection</h3>
+<div class="section_4_data">
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/tripod.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">Flex Tripod</h4>
+        <p class="card-text">
+           <p>$50.48</p> 
+<ul>
+   
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/mic.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">microphone</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+    
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i> &nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/airpod.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">airpod</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+   
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/drone.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">drone</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+    
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/lights.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">light setup</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+  
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/setup.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">Photoshoot set</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+   
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/camera.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">Vlogging Camera</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+  
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/single-light.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">Green Screen</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+  
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+<div class="card text-start">
+    <img class="card-img-top" src="/influencer-gear-main/images/action.png" alt="Title" />
+    <div class="card-body">
+        <h4 class="card-title">Action Camera</h4>
+        <p class="card-text">
+            <p>$50.48</p>
+<ul>
+  
+    <li><i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star white"></i>&nbsp4.99</li>
+    <li>Wordwide shifting </li>
+    <li>available</li>
+    <li>Buyers protection possible!</li>
+</ul>
+
+        </p>
+    </div>
+</div>
+
+
+</div>
+<a href="" class="see">see more <i class="fa-solid fa-arrow-right "></i></a>
+</section>
+
+<section class="section_5">
+
+    <div class="div1">
+
+        <img src="/influencer-gear-main/images/gear.png" alt="">
+    </div>
+    <div class="div2">
+        <h2>Featured products at one place</h2>
+   
+   <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+    do amet sint. Velit officia consequat duis enim velit mollit. 
+    Exercitation veniam consequat sunt nostrud amet.</p>
+   <button class="btn_primary"> <a href="">Join Now<i class="fa-solid fa-arrow-right "></i></a> </button>
+    </div>
+    
+</section>
+
+
+
+</div>
+<section class="section_6">
+
+    <div class="div1">
+    <h3>Influencer products</h3>
+    <p>Copyright © 2020 influencer products</p>
+    <p>All rights reserved</p>
+    
+    
+    </div>
+    
+    <div class="div2">
+        <i class="fa-brands fa-instagram"></i>
+        &nbsp    &nbsp
+        <i class="fa-brands fa-facebook"></i>
+        &nbsp    &nbsp
+        <i class="fa-brands fa-twitter"></i>
+        &nbsp    &nbsp
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    </section>
+    
+</body>
+</html>
